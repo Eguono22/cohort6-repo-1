@@ -5,3 +5,5 @@ I want to use this medium to teach my friends version control and the use of Git
 I have 4 wonderful friends with me on this call and they want to learn Git but really don't know where to start.
 
 Now we are about to get started with the party.
+
+We haven't updated this file in a long while
