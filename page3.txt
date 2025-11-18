@@ -1,7 +1,0 @@
-I will also like to learn programming.
-
-** This new line was added directly on the remote
-
-*** This is a local update
-
-More changes introduced in file 3
