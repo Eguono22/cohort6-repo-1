@@ -1,0 +1,195 @@
+@{
+    ViewData["Title"] = "Our Services";
+}
+
+<div class="hero-section">
+    <div class="container">
+        <h1 class="display-3 fw-bold">Our Services</h1>
+        <p class="lead">Everything you need is right here! Supported by a team of DevOps & Cloud experts</p>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row text-center mb-5">
+        <div class="col">
+            <h2 class="section-title">WHY CHOOSE US</h2>
+            <p class="text-muted">We love what we do... And we'd love to work with you!</p>
+        </div>
+    </div>
+
+    <!-- Services Tabs -->
+    <ul class="nav nav-pills nav-fill mb-4" id="servicesTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="devops-tab" data-bs-toggle="pill" data-bs-target="#devops" type="button" role="tab">
+                Managed DevOps
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="migration-tab" data-bs-toggle="pill" data-bs-target="#migration" type="button" role="tab">
+                Cloud Migration
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="optimization-tab" data-bs-toggle="pill" data-bs-target="#optimization" type="button" role="tab">
+                Cloud Optimization
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="security-tab" data-bs-toggle="pill" data-bs-target="#security" type="button" role="tab">
+                Security & Compliance
+            </button>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="servicesTabContent">
+        <div class="tab-pane fade show active" id="devops" role="tabpanel">
+            <div class="service-card">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h3>Managed DevOps</h3>
+                        <p class="lead">We're delivering software more seamlessly than ever before!</p>
+                        <p>Our managed DevOps services streamline your development pipeline, automate deployments, and enhance collaboration between development and operations teams.</p>
+                        <ul class="feature-list">
+                            <li>Continuous Integration & Deployment</li>
+                            <li>Infrastructure as Code</li>
+                            <li>Automated Testing & Quality Assurance</li>
+                            <li>Pipeline Optimization</li>
+                        </ul>
+                        <a asp-controller="Services" asp-action="ManagedDevOps" class="btn btn-primary btn-lg">Learn More</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-icon-large">
+                            <i class="bi bi-gear-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="migration" role="tabpanel">
+            <div class="service-card">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h3>Cloud Migration</h3>
+                        <p class="lead">Data migration ought to be smooth and effortless!!</p>
+                        <p>We help you transition your applications and data to the cloud with minimal disruption, ensuring optimal performance and cost efficiency.</p>
+                        <ul class="feature-list">
+                            <li>Assessment & Planning</li>
+                            <li>Data Migration Strategy</li>
+                            <li>Application Modernization</li>
+                            <li>Post-Migration Support</li>
+                        </ul>
+                        <a asp-controller="Services" asp-action="CloudMigration" class="btn btn-primary btn-lg">Learn More</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-icon-large">
+                            <i class="bi bi-cloud-upload-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="optimization" role="tabpanel">
+            <div class="service-card">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h3>Cloud Optimization</h3>
+                        <p class="lead">We will help you keep your environment operating smoothly in the cloud!</p>
+                        <p>Maximize your cloud investment with our optimization services that focus on performance, cost reduction, and resource management.</p>
+                        <ul class="feature-list">
+                            <li>Cost Optimization</li>
+                            <li>Performance Tuning</li>
+                            <li>Resource Management</li>
+                            <li>Architecture Review</li>
+                        </ul>
+                        <a asp-controller="Services" asp-action="CloudOptimization" class="btn btn-primary btn-lg">Learn More</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-icon-large">
+                            <i class="bi bi-speedometer2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="security" role="tabpanel">
+            <div class="service-card">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h3>Managed Security & Compliance</h3>
+                        <p class="lead">We seamlessly integrate your security and compliance standards into our work!</p>
+                        <p>Protect your cloud infrastructure with comprehensive security measures and ensure compliance with industry standards.</p>
+                        <ul class="feature-list">
+                            <li>Security Audits & Assessments</li>
+                            <li>Compliance Management</li>
+                            <li>Threat Detection & Response</li>
+                            <li>Identity & Access Management</li>
+                        </ul>
+                        <a asp-controller="Services" asp-action="SecurityCompliance" class="btn btn-primary btn-lg">Learn More</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-icon-large">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Guarantees Section -->
+<div class="bg-light py-5 mt-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col">
+                <h2 class="section-title">WHAT WE GUARANTEE</h2>
+                <p class="text-muted">Easy and effective way to get your services up and running</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Fast Service</h4>
+                    <p>Velocity and quality is what we are known for within the Cloud Space.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h4>Scalable Services</h4>
+                    <p>Our cloud solution is customized to meet your unique consumption. Scaling is automated.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h4>Expert Team</h4>
+                    <p>Your cloud-hosted servers are at your fingertips. With a team of professionals you can trust.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h4>Customized Services</h4>
+                    <p>We design your cloud solution to meet your precise needs, exactly the way you want it.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h4>Affordable Services</h4>
+                    <p>Pay only for what you use each month, with minimal overhead capital costs.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h4>Reliable Solutions</h4>
+                    <p>Maintain 100% uptime with our managed cloud services.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

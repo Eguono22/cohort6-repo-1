@@ -1,0 +1,103 @@
+@model ContactFormModel
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<div class="hero-section">
+    <div class="container">
+        <h1 class="display-3 fw-bold">Get In Touch</h1>
+        <p class="lead">We Are Here For You</p>
+    </div>
+</div>
+
+<div class="container my-5">
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Message"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <h2 class="mb-4">Contact Information</h2>
+            
+            <div class="contact-info-card mb-3">
+                <h5><i class="bi bi-geo-alt-fill"></i> United States</h5>
+                <p>979 Barkston Ln, Danville, 46122, Indiana USA</p>
+                <p><i class="bi bi-telephone-fill"></i> +1 (785) 871-7269</p>
+            </div>
+
+            <div class="contact-info-card mb-3">
+                <h5><i class="bi bi-geo-alt-fill"></i> United Kingdom</h5>
+                <p>3, Claridge Court, St Mark's Street, PE1 2TU, Peterborough</p>
+                <p><i class="bi bi-telephone-fill"></i> +44 7861 782330</p>
+            </div>
+
+            <div class="contact-info-card mb-3">
+                <h5><i class="bi bi-geo-alt-fill"></i> Nigeria</h5>
+                <p>2 Ayo Rosiji Cres, Ikeja GRA 101233, Ikeja</p>
+                <p><i class="bi bi-telephone-fill"></i> +234 902 100 0401</p>
+            </div>
+
+            <div class="contact-info-card">
+                <h5><i class="bi bi-envelope-fill"></i> Email</h5>
+                <p><a href="mailto:info@coils-web.com">info@coils-web.com</a></p>
+            </div>
+
+            <div class="social-links mt-4">
+                <a href="https://facebook.com/coilstech" target="_blank" class="btn btn-outline-primary me-2">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://twitter.com/coilstech" target="_blank" class="btn btn-outline-primary me-2">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://instagram.com/coilstech" target="_blank" class="btn btn-outline-primary">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <h2 class="mb-4">Send Us a Message</h2>
+            <form asp-action="Index" method="post" class="contact-form">
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label"></label>
+                    <input asp-for="Name" class="form-control" placeholder="Your full name" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label"></label>
+                    <input asp-for="Email" class="form-control" placeholder="your.email@example.com" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Phone" class="form-label"></label>
+                    <input asp-for="Phone" class="form-control" placeholder="+1 (555) 123-4567" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Subject" class="form-label"></label>
+                    <input asp-for="Subject" class="form-control" placeholder="How can we help?" />
+                    <span asp-validation-for="Subject" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Message" class="form-label"></label>
+                    <textarea asp-for="Message" class="form-control" rows="5" placeholder="Tell us more about your project..."></textarea>
+                    <span asp-validation-for="Message" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
