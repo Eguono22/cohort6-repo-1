@@ -1,0 +1,238 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="container">
+        <h1 class="display-2 fw-bold mb-4">Grow Your Business with Our Services</h1>
+        <p class="lead mb-4">Everything you need is right here! Supported by a team of DevOps & Cloud experts</p>
+        <div>
+            <a asp-controller="Services" asp-action="Index" class="btn btn-light btn-lg me-3">Get Started</a>
+            <a asp-controller="Contact" asp-action="Index" class="btn btn-outline-light btn-lg">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<!-- Services Tabs Section -->
+<div class="container my-5">
+    <div class="row text-center mb-5">
+        <div class="col">
+            <h2 class="section-title">WHY CHOOSE US</h2>
+            <p class="lead text-muted">We love what we do... And we'd love to work with you!</p>
+        </div>
+    </div>
+
+    <!-- Tab Navigation -->
+    <ul class="nav nav-pills nav-fill mb-4" id="homeTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="devops-home-tab" data-bs-toggle="pill" data-bs-target="#devops-home" type="button" role="tab">
+                <i class="bi bi-gear-fill"></i> Managed DevOps
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="migration-home-tab" data-bs-toggle="pill" data-bs-target="#migration-home" type="button" role="tab">
+                <i class="bi bi-cloud-upload-fill"></i> Cloud Migration
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="optimization-home-tab" data-bs-toggle="pill" data-bs-target="#optimization-home" type="button" role="tab">
+                <i class="bi bi-speedometer2"></i> Cloud Optimization
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="security-home-tab" data-bs-toggle="pill" data-bs-target="#security-home" type="button" role="tab">
+                <i class="bi bi-shield-check"></i> Security & Compliance
+            </button>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="homeTabContent">
+        <div class="tab-pane fade show active" id="devops-home" role="tabpanel">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3 class="mb-3">Managed DevOps</h3>
+                    <p class="lead">We're delivering software more seamlessly than ever before!</p>
+                    <p>Transform your development process with our comprehensive DevOps solutions. We help you automate, streamline, and optimize your entire software delivery pipeline.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-icon-large text-center">
+                        <i class="bi bi-gear-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="migration-home" role="tabpanel">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3 class="mb-3">Cloud Migration</h3>
+                    <p class="lead">Data migration ought to be smooth and effortless!!</p>
+                    <p>Seamlessly transition your infrastructure to the cloud with our expert migration services. We ensure minimal downtime and maximum efficiency.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-icon-large text-center">
+                        <i class="bi bi-cloud-upload-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="optimization-home" role="tabpanel">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3 class="mb-3">Cloud Optimization</h3>
+                    <p class="lead">We will help you keep your environment operating smoothly in the cloud!</p>
+                    <p>Optimize your cloud infrastructure for peak performance and cost efficiency. Our experts ensure your resources are utilized to their fullest potential.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-icon-large text-center">
+                        <i class="bi bi-speedometer2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="security-home" role="tabpanel">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3 class="mb-3">Managed Security & Compliance</h3>
+                    <p class="lead">We seamlessly integrate your security and compliance standards into our work!</p>
+                    <p>Secure your cloud infrastructure with enterprise-grade security measures and ensure compliance with industry standards and regulations.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-icon-large text-center">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="bg-light py-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col">
+                <h2 class="section-title">WHAT WE GUARANTEE</h2>
+                <p class="text-muted">Easy and effective way to get your services up and running</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Fast Service</h4>
+                    <p>Velocity and quality is what we are known for within the Cloud Space.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">📈</div>
+                    <h4>Scalable Services</h4>
+                    <p>Our cloud solution is customized to meet your unique consumption. Scaling is automated, so that as you grow, your cloud grows with you.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">👥</div>
+                    <h4>Expert Team</h4>
+                    <p>Your cloud-hosted servers are at your fingertips. With a team of professionals you can trust always.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">🎯</div>
+                    <h4>Customized Services</h4>
+                    <p>We design your cloud solution to meet your precise needs, exactly the way you want it, because we know that one size doesn't fit all.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">💰</div>
+                    <h4>Affordable Services</h4>
+                    <p>Pay only for what you use each month, with minimal overhead capital costs. We only bill you for services you actually need and use.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">✅</div>
+                    <h4>Reliable Solutions</h4>
+                    <p>Maintain 100% uptime with our managed cloud services, because we know how important it is to stay up and working constantly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div class="container my-5 py-5">
+    <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <h2 class="section-title mb-4">ABOUT COILS TECHNOLOGIES</h2>
+            <h3 class="mb-3">Top Cloud Services StartUp That Help Grow Your Business</h3>
+            <p>Coils Technologies, a leading provider of comprehensive cloud services and solutions aimed at driving the growth and success of businesses and operations.</p>
+            <p>Partner with Coils Technologies today and embark on a transformative journey towards enhanced agility, scalability, security, and operational excellence. Let us help you navigate the complexities of the cloud, embrace cutting-edge technologies, and unlock the full potential of your business in the digital era.</p>
+            <div class="mt-4">
+                <a asp-controller="About" asp-action="Index" class="btn btn-primary btn-lg me-3">Learn More</a>
+                <a asp-controller="Contact" asp-action="Index" class="btn btn-outline-primary btn-lg">Contact Us</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="about-image-placeholder">
+                <div class="placeholder-content">
+                    <i class="bi bi-cloud-check-fill"></i>
+                    <h4>Cloud Excellence</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Technologies Preview -->
+<div class="bg-primary text-white py-5">
+    <div class="container text-center">
+        <h2 class="section-title text-white mb-4">OUR TECHNOLOGIES</h2>
+        <p class="lead mb-4">Easy and Seamless Cloud-based Solutions</p>
+        <div class="row g-3 mb-4">
+            <div class="col-6 col-md-3">
+                <div class="tech-badge">
+                    <i class="bi bi-cloud-fill fs-1"></i>
+                    <p class="mb-0">Azure</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="tech-badge">
+                    <i class="bi bi-clouds-fill fs-1"></i>
+                    <p class="mb-0">AWS</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="tech-badge">
+                    <i class="bi bi-diagram-3-fill fs-1"></i>
+                    <p class="mb-0">Kubernetes</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="tech-badge">
+                    <i class="bi bi-database-fill fs-1"></i>
+                    <p class="mb-0">Databases</p>
+                </div>
+            </div>
+        </div>
+        <a asp-controller="Technologies" asp-action="Index" class="btn btn-light btn-lg">View All Technologies</a>
+    </div>
+</div>
+
+<style>
+    .tech-badge {
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .tech-badge:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-5px);
+    }
+</style>
