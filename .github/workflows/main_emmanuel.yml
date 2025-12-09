@@ -32,7 +32,7 @@ jobs:
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
-          name: .net-app
+          name: myapp
           path: ./publish
 
   deploy:
@@ -43,7 +43,7 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
-          name: .net-app
+          name: myapp
       
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
@@ -51,8 +51,9 @@ jobs:
         with:
           app-name: 'emmanuel'
           slot-name: 'Production'
-          package: ./.net-app
+          package: ./myapp
 
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_975FBC4ADCAE454292E92CC474D34334 }}
+
 
 
