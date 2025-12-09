@@ -24,7 +24,7 @@ jobs:
           dotnet-version: '10.x'
 
       - name: Build with MSBuild
-        run: msbuild legacyapp/legacyapp.csproj
+        run: dotnet build legacyapp/legacyapp.csproj
 
       - name: dotnet publish
         run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
@@ -54,3 +54,4 @@ jobs:
           package: .
 
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_975FBC4ADCAE454292E92CC474D34334 }}
+
